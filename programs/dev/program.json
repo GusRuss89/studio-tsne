@@ -1,0 +1,26 @@
+{
+  "control": {
+    "running": false,
+    "resetting": false
+  },
+  "blockInstances": [
+    {
+      "id": "data-5tLUZEfQg",
+      "type": "data",
+      "codeExpanded": true
+    },
+    {
+      "id": "t-SNE-XkgydhQqj",
+      "type": "t-SNE",
+      "codeExpanded": true,
+      "memberOverrides": {
+        "lYlKPRM99": {
+          "value": "data4d"
+        },
+        "wLhLUlbTP": {
+          "value": "datalabels"
+        }
+      }
+    }
+  ]
+}

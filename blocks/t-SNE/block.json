@@ -1,0 +1,18 @@
+{
+  "source": "code.js",
+  "members": [
+    {
+      "id": "lYlKPRM99",
+      "stateKey": "data",
+      "type": "Link"
+    },
+    {
+      "id": "wLhLUlbTP",
+      "stateKey": "labels",
+      "type": "Link"
+    }
+  ],
+  "codeExpanded": true,
+  "path": "/Applications/MAMP/htdocs/studio-3dmaps/blocks/t-SNE",
+  "worker": false
+}

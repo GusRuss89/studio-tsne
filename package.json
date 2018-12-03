@@ -1,0 +1,11 @@
+{
+  "name": "new-syntropy-studio-workspace",
+  "keywords": [
+    "syntropy-studio-workspace"
+  ],
+  "dependencies": {
+    "d3": "^3.5.12",
+    "datamaps": "^0.5.9",
+    "tsne-js": "^1.0.3"
+  }
+}
