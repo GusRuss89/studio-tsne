@@ -1,6 +1,6 @@
 {
   "control": {
-    "running": false,
+    "running": true,
     "resetting": false
   },
   "blockInstances": [
@@ -19,6 +19,12 @@
         },
         "wLhLUlbTP": {
           "value": "datalabels"
+        },
+        "kFE-ze69I": {
+          "value": 10
+        },
+        "cj6UdBQI7": {
+          "value": 5.5
         }
       }
     }

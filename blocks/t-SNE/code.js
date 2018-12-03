@@ -375,8 +375,8 @@ export const run = (state, { io, domRoot }) => {
 
   // @todo move settings to members
   var opt = {}
-  opt.epsilon = 5; // epsilon is learning rate (10 = default)
-  opt.perplexity = 4; // roughly how many neighbors each point influences (30 = default)
+  opt.epsilon = io.learningRate; // epsilon is learning rate (10 = default)
+  opt.perplexity = io.neighbours; // roughly how many neighbors each point influences (30 = default)
   opt.dim = 2; // dimensionality of the embedding (2 = default)
 
   state.T = new tsnejs.tSNE(opt); // create a tSNE instance

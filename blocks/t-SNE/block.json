@@ -10,6 +10,16 @@
       "id": "wLhLUlbTP",
       "stateKey": "labels",
       "type": "Link"
+    },
+    {
+      "id": "kFE-ze69I",
+      "stateKey": "learningRate",
+      "type": "Number"
+    },
+    {
+      "id": "cj6UdBQI7",
+      "stateKey": "neighbours",
+      "type": "Number"
     }
   ],
   "codeExpanded": true,
