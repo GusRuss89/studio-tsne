@@ -368,18 +368,11 @@ var tsnejs = tsnejs || { REVISION: 'ALPHA' };
 
 
 export const run = (state, { io, domRoot }) => {
-  
-  state.tx = 0;
-  state.ty = 0;
-  state.ss = 1;
-
-  // @todo move settings to members
-  var opt = {}
-  opt.epsilon = io.learningRate; // epsilon is learning rate (10 = default)
-  opt.perplexity = io.neighbours; // roughly how many neighbors each point influences (30 = default)
-  opt.dim = 2; // dimensionality of the embedding (2 = default)
-
-  state.T = new tsnejs.tSNE(opt); // create a tSNE instance
+  var Tconfig = {
+    epsilon = io.learningRate, // epsilon is learning rate (10 = default)
+    perplexity = io.neighbours
+  }
+  state.T = new tsnejs.tSNE(Tconfig); // create a tSNE instance
 
   // Init embedding ===
   var embed = document.createElement('div')
@@ -413,6 +406,9 @@ export const run = (state, { io, domRoot }) => {
       .text(function(d,i) { return io.labels[i]; });
   }
 
+  state.tx = 0;
+  state.ty = 0;
+  state.ss = 1;
   var zoomListener = d3.behavior.zoom()
     .scaleExtent([0.1, 10])
     .center([0,0])
